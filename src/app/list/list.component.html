@@ -1,0 +1,30 @@
+<p>list works!</p>
+<div class="container">
+        <button type="submit" click="reset()">reset</button>
+    </div>
+<div class="container">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let a of books">
+          <th scope="row">{{a.id}}</th>
+          <td>{{a.title}}</td>
+          <td>{{a.author}}</td>
+          <td>{{a.price}}</td>
+          <td><a class="btn btn-primary" routerLink="/comment" >comment</a></td>
+         <td><a class="btn btn-primary" routerLink="/view" >View</a></td>
+        
+
+        </tr>
+    
+      </tbody>
+    </table>
+  </div>
+ 
